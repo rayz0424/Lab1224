@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title></title>
+</head>
+<body>
+	<p id="word"></p>
+
+	<script type="text/javascript">
+		var ss=prompt("input data");
+		var char=prompt("input a character to find its index");
+
+		var first=ss.indexOf(char);
+		var second=ss.lastIndexOf(char);
+		var third=ss.indexOf(char,3);
+
+		document.getElementById("word").innerHTML=first+ "<br>" +second+ "<br>"+third;
+	</script>
+</body>
+</html>
